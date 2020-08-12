@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width: 1279px; max-width: 100%;">
+
+
+        <div class="carousel-mod-x">
+            <div class="carousel-container multiple-items">
+                <div class="esquerda">
+                    <figure class="esquerda-fig">
+                        <figcaption class="esquerda-fig-titulo">Legenda para a imagem impressionante</figcaption>
+                        <img class="esquerda-fig=img" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png"
+                            alt="Uma imagem impressionante">
+                        <figcaption class="esquerda-fig-legenda">Legenda para a imagem impressionante</figcaption>
+                    </figure>
+                </div>
+                <div class="direita">
+                    <figure class="direita-fig">
+                        <figcaption class="direita-fig-titulo">Legenda para a imagem impressionante</figcaption>
+                        <img class="direita-fig-img" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png"
+                            alt="Uma imagem impressionante">
+                        <figcaption class="direita-fig-legenda">Legenda para a imagem impressionante Legenda para a
+                            imagem impressionante Legenda para a imagem impressionante</figcaption>
+                    </figure>
+                </div>
+                <div class="direita">
+                    <figure class="direita-fig">
+                        <figcaption class="direita-fig-titulo">Legenda para a imagem impressionante</figcaption>
+                        <img class="direita-fig-img" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png"
+                            alt="Uma imagem impressionante">
+                        <figcaption class="direita-fig-legenda">Legenda para a imagem impressionante Legenda para a
+                            imagem impressionante Legenda para a imagem impressionante</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+        integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 960,
+                        settings: {
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.carousel-mod-x {
+    .slick-next {
+        &::before {
+            color: #7c7c7c;
+            font-size: 30px;
+        }
+    }
+    .slick-prev {
+        &::before {
+            color: #7c7c7c;
+            font-size: 30px;
+        }
+    }
+    background-color: #e8ecf1;
+    color: #2e3131;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    img {
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
+    p {
+        margin: 0;
+    }
+    div {
+        &.carousel-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            div {
+                &.esquerda {
+                    flex: 1;
+                    figure {
+                        figcaption {
+                            &.esquerda-fig-titulo {
+                                text-align: center;
+                                margin-bottom: 20px;
+                                font-size: 1.2em;
+                            }
+                            &.esquerda-fig-legenda {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+                &.direita {
+                    flex: 1;
+                    figure {
+                        figcaption {
+                            &.direita-fig-titulo {
+                                text-align: center;
+                                margin-bottom: 20px;
+                                font-size: 1.2em;
+                            }
+                            &.direita-fig-legenda {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
